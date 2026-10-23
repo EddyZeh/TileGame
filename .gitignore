@@ -1,0 +1,9 @@
+#ignore build folder
+TileGame/
+
+x64/
+
+*.vs
+
+*.user
+*.filters
