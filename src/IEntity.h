@@ -5,6 +5,7 @@
 
 class IEntity{
     public:
+        virtual ~IEntity() {}
         virtual char GetCharacter() const = 0;
         virtual const Vector2 &GetPosition() const = 0;
         virtual void SetPosition(const Vector2 &position) = 0;

@@ -19,6 +19,9 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <None Include=".gitignore" />
+  </ItemGroup>
+  <ItemGroup>
     <ClCompile Include="src\Actor.cpp" />
     <ClCompile Include="src\Enemy.cpp" />
     <ClCompile Include="src\Fireball.cpp" />
@@ -49,7 +52,16 @@
     <ClInclude Include="src\WeaponPickUpTile.h" />
   </ItemGroup>
   <ItemGroup>
-    <Text Include="assets\level.txt" />
+    <Text Include="assets\level1.txt" />
+    <Text Include="assets\level10.txt" />
+    <Text Include="assets\level2.txt" />
+    <Text Include="assets\level3.txt" />
+    <Text Include="assets\level4.txt" />
+    <Text Include="assets\level5.txt" />
+    <Text Include="assets\level6.txt" />
+    <Text Include="assets\level7.txt" />
+    <Text Include="assets\level8.txt" />
+    <Text Include="assets\level9.txt" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>

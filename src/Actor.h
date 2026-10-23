@@ -25,6 +25,7 @@ class Actor : public IEntity, public IActor{
     virtual IWeapon* GetWeapon(); 
     virtual void SetWeapon(IWeapon *weapon);
     virtual int GetHealth() const;
+    void SetHealth(int health);
     virtual void TakeDamage(int damage);
     
     virtual char GetCharacter() const;

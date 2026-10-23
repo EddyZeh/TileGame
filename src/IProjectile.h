@@ -2,9 +2,12 @@
 #define IPROJECTILE_H
 
 #include "IEntity.h"
+#include "Vector2.h"
 
 class IProjectile : public IEntity{
-    virtual int GetDamage() = 0;
+    public:
+        virtual int GetDamage() = 0;
+        virtual Vector2 GetVelocity() const = 0;
 };
  
 #endif

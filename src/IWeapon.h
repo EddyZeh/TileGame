@@ -6,6 +6,7 @@
 
 class IWeapon{
     public:
+        virtual ~IWeapon() {}
         virtual void Attach(IEntity &entity) = 0;
         virtual void Fire(IEntity &entity, const Vector2 &pos) = 0;
         virtual bool isActive(IEntity &entity) = 0;

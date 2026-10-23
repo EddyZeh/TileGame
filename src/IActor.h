@@ -5,6 +5,7 @@
 
 class IActor{
     public:
+    virtual ~IActor() {}
     virtual IWeapon* GetWeapon() = 0;
     virtual void SetWeapon(IWeapon *weapon) = 0;
     virtual int GetHealth() const = 0;

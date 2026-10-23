@@ -9,6 +9,9 @@ SingleProjectile::SingleProjectile(Level &level, int damage, char ch, const Vect
 int SingleProjectile::GetDamage(){
     return _damage;
 }
+Vector2 SingleProjectile::GetVelocity() const{
+    return _velocity;
+}
 char SingleProjectile::GetCharacter() const{
     return _character;
 }

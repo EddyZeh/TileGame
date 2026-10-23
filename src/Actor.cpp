@@ -35,6 +35,9 @@ IWeapon* Actor::GetWeapon(){
 int Actor::GetHealth() const{
     return _health;
 }
+void Actor::SetHealth(int health){
+    _health = health;
+}
 void Actor::TakeDamage(int damage){
     _health -= damage;
     if(_health <= 0){

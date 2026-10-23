@@ -15,7 +15,8 @@ class SingleProjectile: public IProjectile{
         Vector2 _velocity;
     public:
         SingleProjectile(Level &level, int damage,char ch, const Vector2 &velocity);
-        int GetDamage();
+        virtual int GetDamage();
+        virtual Vector2 GetVelocity() const;
         virtual char GetCharacter() const;
         virtual const Vector2 &GetPosition() const;
         virtual void SetPosition(const Vector2 &position);

@@ -8,7 +8,7 @@ void Fireball::Attach(IEntity &entity){
 
 }
 void Fireball::Fire(IEntity &entity, const Vector2 &direction){
-    _level.SetEntity(new SingleProjectile(_level, _damage, _character, direction), entity.GetPosition() + direction);
+    _level.SpawnProjectile(new SingleProjectile(_level, _damage, _character, direction), entity.GetPosition() + direction);
 }
 
 bool Fireball::isActive(IEntity &entity){

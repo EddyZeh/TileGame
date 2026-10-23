@@ -29,6 +29,6 @@ bool MultiFireball::isActive(IEntity &entity){
     return true;
 }
 void MultiFireball::CreateProjectile(const Vector2 &position, const Vector2 &direction){
-    _level.SetEntity(new SingleProjectile(_level, _damage, _character, direction), position + direction);
+    _level.SpawnProjectile(new SingleProjectile(_level, _damage, _character, direction), position + direction);
 
 }
